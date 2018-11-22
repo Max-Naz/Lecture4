@@ -1,8 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Add Product. Cross Browser Testing" verbose="1" >
-    <test name="Product Addition. Test in Chrome" >
+<suite name="Product Addition Test-Suite." verbose="1" >
+    <test name="Product Addition Test (Chrome)." >
         <parameter name="driverParam" value="chrome"></parameter>
+        <classes>
+            <class name="com.qatestlab.tests.ProductAdditionTest"/>
+        </classes>
+    </test>
+    <test name="Product Addition Test (Firefox)." >
+        <parameter name="driverParam" value="firefox"></parameter>
         <classes>
             <class name="com.qatestlab.tests.ProductAdditionTest"/>
         </classes>
