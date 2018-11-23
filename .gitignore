@@ -1,5 +1,6 @@
 # Configuration Files
 # IntelliJ Idea Files
 target/
+test-output/
 .idea/
 *.iml

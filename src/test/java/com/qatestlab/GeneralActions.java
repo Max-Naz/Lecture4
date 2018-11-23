@@ -44,7 +44,9 @@ public class GeneralActions {
 
         log("Open products page from main menu.");
         Actions builder = new Actions(driver);
-        builder.moveToElement(catalogMenuItem).pause(Duration.ofSeconds(1)).click(productsMenuItem).build().perform();
+        builder.moveToElement(catalogMenuItem).pause(Duration.ofSeconds(5)).
+                moveToElement(productsMenuItem).click(productsMenuItem).
+                build().perform();
     }
 
     public  void openNewProductPage() {
